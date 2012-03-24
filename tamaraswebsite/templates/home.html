@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+
+<head>
+    <title>Welcome To Our Django Site</title>
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/main.css" type="text/css" />
+</head>
+
+<body>
+	<div class="logo">Tamara's django site</div>
+	<ul class="nav">
+    	<li id="current-menu">HOME</li>
+       	<li class="nav">GALLERY</li>
+       	<li class="nav"><a href="/polls">POLL</li>
+    	<li class="nav"><a href="{% url contactus %}">CONTACT-US</a></li>    	
+	</ul>
+</body>
+
+</html>

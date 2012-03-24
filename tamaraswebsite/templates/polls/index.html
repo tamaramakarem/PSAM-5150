@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd"><html>       
+<html lang="en-US" xml:lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Welcome To Our Django Site</title>
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/main.css" type="text/css" />
+</head>
+
+<body>
+<div class="logo">Tamara's django site</div>
+	<ul class="nav">
+    	<li class="nav">HOME</li>
+       	<li class="nav">GALLERY</li>
+       	<li id="current-menu"><a href="/polls">POLL</li> 
+    	<li class="nav"><a href="{% url contactus %}">CONTACT-US</a></li>    	
+	</ul>
+
+
+<div>
+{% if latest_poll_list %}
+    <ul>
+    {% for poll in latest_poll_list %}
+        <li><a href="/polls/{{ poll.id }}/">{{ poll.question }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}
+</div>
+</body>
+</html>

@@ -6,4 +6,7 @@ urlpatterns = patterns('',
     url(r'^book/$', BookAnAppointment.as_view(), name='book_appointment'),
     url(r'^contact/$', AddContact.as_view(), name='add_contact'),
     url(r'^event_type/$', AddEventType.as_view(), name='add_event'),
+    url(r'^event_type/thankyou$', WelcomePage.as_view(), name='thankyou'),
+    url(r'^contact/thankyou$', WelcomePage.as_view(), name='thankyou'),
+    url(r'^book/thankyou$', WelcomePage.as_view(), name='thankyou'),
 )

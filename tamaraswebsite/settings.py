@@ -105,8 +105,8 @@ MIDDLEWARE_CLASSES = (
 ROOT_URLCONF = 'tamaraswebsite.urls'
 
 TEMPLATE_DIRS = (
-    '/users/apple/tamaraswebsite2/admin/poll.html',
-    '/users/apple/PSAM-5150/tamaraswebsite2/templates'
+    '/users/apple/tamaraswebsite/admin/poll.html',
+    '/users/apple/PSAM-5150/tamaraswebsite/templates'
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
